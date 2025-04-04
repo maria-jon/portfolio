@@ -64,14 +64,14 @@ section {
   background-color: #FFF4E5;
   border: solid 0.2rem #595F33;
   border-radius: 1rem;
-  padding: 0.5rem;
+  padding: 0.8rem;
   width: 90vw;
 }
 
 .projects {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(4);
   gap: 1rem;
 }
 
@@ -79,9 +79,22 @@ section {
   max-width: 90vw;
   height: auto;
   background-color: #E4CB2D;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.project-link {
+  width: 90%;
+}
+
+.project-description {
   max-width: 90%;
   height: auto;
 }
