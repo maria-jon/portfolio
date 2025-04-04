@@ -10,12 +10,13 @@
 }
 
 a {
-  font-weight: 500;
-  color: #87A0BA;
+  font-weight: 600;
+  color: #595F33;
   text-decoration: inherit;
 }
 a:hover {
-  color: #E4CB2D;
+  /*color: #E4CB2D;*/
+  color: #93ABC7;
 }
 
 body {
@@ -38,7 +39,7 @@ h2 {
   font-size: 2rem;
   line-height: 2rem;
   margin: 0;
-  padding: 0.5rem 0;
+  padding: 0.5rem 0 1rem 0;
 }
 
 h3 {
@@ -64,7 +65,7 @@ section {
   background-color: #FFF4E5;
   border: solid 0.2rem #595F33;
   border-radius: 1rem;
-  padding: 0.8rem;
+  padding: 1rem;
   width: 90vw;
 }
 
@@ -78,7 +79,6 @@ section {
 .card {
   max-width: 90vw;
   height: auto;
-  background-color: #E4CB2D;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,11 +91,11 @@ section {
 }
 
 .project-link {
-  width: 90%;
+  width: 80%;
 }
 
 .project-description {
-  max-width: 90%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -109,19 +109,6 @@ section {
   background-color: #595F33;
   color: #F8F8F8;
   padding: 0 0.5rem;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #87A0BA);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #87A0BA);
 }
 
 
@@ -144,7 +131,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (min-width: 768px){
+@media (min-width: 1024px){
   .projects {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -152,5 +139,16 @@ button:focus-visible {
   .card {
     max-width: 40vw;
     height: auto;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .project-link {
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  
+  .project-link:hover {
+    filter: drop-shadow(0.5rem 0.5rem #595F33);
   }
 }
