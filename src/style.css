@@ -29,7 +29,7 @@ body {
 
 h1 {
   font-family: "Kalnia", 'Times New Roman', Times, serif;
-  font-size: 4rem;
+  font-size: 2.5rem;
   margin: 0;
   text-align: center;
 }
@@ -54,7 +54,7 @@ header {
 }
 
 main {
-  width: 95vw;
+  width: 100vw;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -67,6 +67,18 @@ section {
   border-radius: 1rem;
   padding: 1rem;
   width: 90vw;
+}
+
+.hello {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.profile {
+  max-height: 30vh;
+  width: auto;
+  border-radius: 100%;
 }
 
 .projects {
@@ -111,6 +123,28 @@ section {
   padding: 0 0.5rem;
 }
 
+footer {
+  background-color: #595F33;
+  color: #F8F8F8;
+  min-height: 10vh;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+footer h3 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+footer a {
+  color: #F8F8F8;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 
 button {
   border-radius: 8px;
@@ -123,26 +157,59 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* -------- TABLET -------- */
+@media (min-width: 430px){
+  h1 {
+    font-size: 3rem;
+  }
+
+  main {
+    width: 95vw;
+  }
+
+  .hello {
+    flex-direction: row;
+  }
+
+  .contact {
+    flex-direction: row;
+  }
+}
+
+/* -------- DESKTOP -------- */
 @media (min-width: 1024px){
+  h1 {
+    font-size: 4rem;
+  }
+
+  .profile {
+
+  }
+
   .projects {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
   }
+
   .card {
     max-width: 40vw;
     height: auto;
   }
 }
 
+/* -------- ANIMATION -------- */
 @media (prefers-reduced-motion: no-preference) {
+
   .project-link {
     will-change: filter;
     transition: filter 300ms;
