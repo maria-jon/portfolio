@@ -53,8 +53,20 @@ header {
   width: 100%;
 }
 
+.icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin: 0 1rem 0.5rem 0;
+}
+
 .fa, .fa-solid {
   font-size: 2.5rem;
+}
+
+.icons > a {
+  padding: 0.1rem 0.5rem;
+  opacity: 70%;
 }
 
 main {
@@ -285,6 +297,15 @@ button:focus-visible {
     filter: drop-shadow(0.5rem 0.5rem #595F33);
   }
 
+  .icons > a {
+    will-change: opacity;
+    transition: opacity 300ms ease-in-out;
+  }
+  .icons > a:hover {
+    opacity: 100%;
+    color: #595F33;
+  }
+  /*
   a, i {
     will-change: filter;
     transition: filter 300ms ease-in-out;
@@ -292,4 +313,5 @@ button:focus-visible {
   a:hover, i:hover {
     filter: drop-shadow(0.1rem 0.1rem #595F33);
   }
+  */
 }
