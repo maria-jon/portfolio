@@ -111,11 +111,6 @@ section {
   border-radius: 100%;
 }
 
-.toolkit {
-  max-width: 70vw;
-  align-self: center;
-}
-
 .flex {
   display: flex;
 }
@@ -250,12 +245,14 @@ button:focus-visible {
   .contact {
     flex-direction: row;
   }
+
 }
 
 /* -------- SMALL DESKTOP -------- */
 @media (min-width: 740px){
   .intro {
     flex-direction: row;
+    align-items: stretch;
   }
 
   .hello {
