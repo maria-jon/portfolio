@@ -280,6 +280,11 @@ button:focus-visible {
     max-width: 45vw;
     height: auto;
   }
+
+  .card img {
+    max-height: 40vh;
+    width: auto;
+  }
 }
 
 /* -------- ANIMATION -------- */
