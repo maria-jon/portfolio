@@ -12,7 +12,7 @@ const {
 ---
 
 <div class="card">
-    <a aria-label="link to project" href={linkLive}>
+    <a aria-label="link to project" class="project-link" href={linkLive}>
         <img src={imgSrc}
             width={imgWidth}
             height={imgHeight}
@@ -29,3 +29,14 @@ const {
         <slot />
     </div>
 </div>
+
+<style>
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .project-link {
+        width: 80%;
+    }
+</style>

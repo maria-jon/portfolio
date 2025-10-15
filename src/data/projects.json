@@ -34,5 +34,111 @@
             "height": "1400",
             "alt": "Screenshot of IT-jobben project"
         }
-    }
+    },
+    {
+		"name": "To-do app",
+		"description": "To-do-app created with Vite and Vue as a school project. User can add tasks to app, mark them as done, and delete them. User can filter tasks depending on status, and tasks are saved in localStorage.",
+		"linkLive": "https://maria-jon.github.io/todo/",
+		"linkGithub": "https://github.com/maria-jon/todo",
+		"tags": [
+			"Vue",
+			"Pinia",
+			"TypeScript",
+            "Vite"
+		],
+		"img": {
+			"src": "/todo.png",
+			"width": "1440",
+			"height": "1132",
+			"alt": "Screenshot of to-do project"
+		}
+	},
+    {
+		"name": "Beefcake",
+		"description": "A text-based adventure game about a dog going on a quest to look for his ball. Personal side-project to practise Vue and Figma. Please note that the project is currently still in development and is not finished.",
+		"linkLive": "https://maria-jon.github.io/beefcake/",
+		"linkGithub": "https://github.com/maria-jon/beefcake",
+		"tags": [
+			"Vue",
+			"TypeScript",
+			"Sass",
+            "Vite"
+		],
+		"img": {
+			"src": "/beefcake.png",
+			"width": "1666",
+			"height": "1398",
+			"alt": "Screenshot of Beefcake project"
+		}
+	},
+    {
+		"name": "SR comedy",
+		"description": "A project that displays all comedy shows from the SR programme API. Assignment was to take over an existing project, refactor code, and eliminate code smells.",
+		"linkLive": "https://maria-jon.github.io/SR-comedy/",
+		"linkGithub": "https://github.com/maria-jon/SR-comedy",
+		"tags": [
+			"API",
+			"Code smells",
+			"TypeScript",
+            "Vite"
+		],
+		"img": {
+			"src": "/SR-comedy.png",
+			"width": "1038",
+			"height": "1410",
+			"alt": "Screenshot of SR-comedy project"
+		}
+	},
+    {
+		"name": "Quiz",
+		"description": "TypeScript quiz with 20 multiple choice-questions about geography with timer, scoring and instant feedback.",
+		"linkLive": "https://maria-jon.github.io/quiz/",
+		"linkGithub": "https://github.com/maria-jon/quiz",
+		"tags": [
+			"TypeScript",
+			"Sass",
+			"Vite",
+            "A11y"
+		],
+		"img": {
+			"src": "/quiz.png",
+			"width": "2116",
+			"height": "1616",
+			"alt": "Screenshot of Quiz project"
+		}
+	},
+    {
+		"name": "Donut webshop",
+		"description": "School project in Javascript to create a webshop selling donuts, including time-sensitive discounts and checkout.",
+		"linkLive": "https://maria-jon.github.io/donut-webshop/",
+		"linkGithub": "https://github.com/maria-jon/donut-webshop",
+		"tags": [
+			"JavaScript",
+			"Vite",
+			"Form validation"
+		],
+		"img": {
+			"src": "/webshop.png",
+			"width": "1548",
+			"height": "1402",
+			"alt": "Screenshot of Donut webshop project"
+		}
+	},
+    {
+		"name": "Restaurant",
+		"description": "School project in HTML and CSS to create a webshop for a restaurant according to a brief provided by the client.",
+		"linkLive": "https://maria-jon.github.io/kundprojekt/",
+		"linkGithub": "https://github.com/maria-jon/kundprojekt",
+		"tags": [
+			"HTML5",
+			"Sass",
+			"JavaScript"
+		],
+		"img": {
+			"src": "/customer.png",
+			"width": "1626",
+			"height": "1404",
+			"alt": "Screenshot of Restaurant project"
+		}
+	}
 ]
