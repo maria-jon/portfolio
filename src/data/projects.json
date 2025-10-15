@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Poseidon's retreat",
+        "description": "A website made for an underwater hotel according to a Figma design brief from another group of students.",
+        "linkLive": "https://maria-jon.github.io/poseidons-retreat/",
+        "linkGithub": "https://github.com/maria-jon/poseidons-retreat",
+        "tags": [
+            "Vue",
+            "TypeScript",
+            "Sass",
+            "Vite"
+        ],
+        "img": {
+            "src": "/poseidon.png",
+            "width": "1548",
+            "height": "1400",
+            "alt": "Screenshot of Poseidon project"
+        }
+    },
+    {
+        "name": "IT-jobben",
+        "description": "Website made in React using Arbetsförmedlingens design system and JobSearch API.",
+        "linkLive": "https://it-jobben.vercel.app/",
+        "linkGithub": "https://github.com/maria-jon/it-jobben",
+        "tags": [
+            "React",
+            "TypeScript",
+            "API",
+            "Vite"
+        ],
+        "img": {
+            "src": "/it-jobben.png",
+            "width": "1548",
+            "height": "1400",
+            "alt": "Screenshot of IT-jobben project"
+        }
+    }
+]
