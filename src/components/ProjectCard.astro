@@ -1,0 +1,31 @@
+---
+const { 
+    name, 
+    description, 
+    linkLive,
+    linkGithub,
+    imgSrc, 
+    imgWidth, 
+    imgHeight, 
+    imgAlt 
+} = Astro.props;
+---
+
+<div class="card">
+    <a aria-label="link to project" href={linkLive}>
+        <img src={imgSrc}
+            width={imgWidth}
+            height={imgHeight}
+            loading="lazy"
+            alt={imgAlt}
+        />
+    </a>
+    <div class="project-description">
+        <h3>{name}</h3>
+        <p>{description}</p>
+        <a href={linkGithub}>View it on GitHub</a> <span>or</span> <a href={linkLive}>view live version</a>
+    </div>
+    <div class="tags">
+        <slot />
+    </div>
+</div>
