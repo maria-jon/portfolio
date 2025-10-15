@@ -4,11 +4,15 @@ import Hello from "../components/Hello.astro";
 import Toolkit from "../components/Toolkit.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 import MiniCard from "../components/MiniCard.astro";
-import projects from "../data/projects.json";
+// import projects from "../data/projects.json";
 
 import { getCollection } from "astro:content";
 
 const miniCards = (await getCollection("miniCards")).sort(
+    (a, b) =>  a.data.id - b.data.id,
+);
+
+const projects = (await getCollection("projects")).sort(
     (a, b) =>  a.data.id - b.data.id,
 );
 ---
@@ -23,25 +27,9 @@ const miniCards = (await getCollection("miniCards")).sort(
             <h2>featured projects</h2>
             <div class="projects">
                 {
-                    projects.map((p) => (
-                        <ProjectCard
-                            name={p.name}
-                            description={p.description}
-                            linkLive={p.linkLive}
-                            linkGithub={p.linkGithub}
-                            imgSrc={p.img.src}
-                            imgWidth={p.img.width}
-                            imgHeight={p.img.height}
-                            imgAlt={p.img.alt}
-                        >
-                            <span>tag</span>
-                            <span>tag</span>
-                            <span>tag</span>
-                        </ProjectCard>
-                    ))
+                    projects.map((project) => <ProjectCard projects={project} />)
                 }
             </div>
-            <!-- -->
             <div class="card other-projects">
                 <h2>Other projects</h2>
                 {
