@@ -1,11 +1,30 @@
 ---
-const { 
+/*const { 
     name, 
     description, 
     linkLive,
     linkGithub
-} = Astro.props;
+} = Astro.props;*/
+
+import { render, type CollectionEntry } from "astro:content";
+interface Props {
+  miniCard: CollectionEntry<"miniCards">;
+}
+
+const { miniCard } = Astro.props;
+const { Content } = await render(miniCard);
 ---
+<div class="mini-card">
+    <h3>{miniCard.data.title}</h3>
+    <p><Content /></p>
+    <a href={miniCard.data.linkGithub}>View it on GitHub</a> <span>or</span> <a href={miniCard.data.linkLive}>view live version</a>
+    <div class="tags">
+        <span>tag</span>
+    </div>
+</div>
+
+
+{/* 
 <div class="mini-card">
     <h3>{name}</h3>
     <p>{description}</p>
@@ -13,4 +32,4 @@ const {
     <div class="tags">
         <slot />
     </div>
-</div>
+</div>*/}
