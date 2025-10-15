@@ -1,11 +1,4 @@
 ---
-/*const { 
-    name, 
-    description, 
-    linkLive,
-    linkGithub
-} = Astro.props;*/
-
 import { render, type CollectionEntry } from "astro:content";
 interface Props {
   miniCard: CollectionEntry<"miniCards">;
@@ -13,23 +6,15 @@ interface Props {
 
 const { miniCard } = Astro.props;
 const { Content } = await render(miniCard);
+const tags = miniCard.data.tags;
 ---
 <div class="mini-card">
     <h3>{miniCard.data.title}</h3>
     <p><Content /></p>
     <a href={miniCard.data.linkGithub}>View it on GitHub</a> <span>or</span> <a href={miniCard.data.linkLive}>view live version</a>
     <div class="tags">
-        <span>tag</span>
+        {
+            tags.map((t) => <span>{t}</span>)
+        }
     </div>
 </div>
-
-
-{/* 
-<div class="mini-card">
-    <h3>{name}</h3>
-    <p>{description}</p>
-    <a href={linkGithub}>View it on GitHub</a> <span>or</span> <a href={linkLive}>view live version</a>
-    <div class="tags">
-        <slot />
-    </div>
-</div>*/}
