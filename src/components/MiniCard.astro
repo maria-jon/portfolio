@@ -1,0 +1,16 @@
+---
+const { 
+    name, 
+    description, 
+    linkLive,
+    linkGithub
+} = Astro.props;
+---
+<div class="mini-card">
+    <h3>{name}</h3>
+    <p>{description}</p>
+    <a href={linkGithub}>View it on GitHub</a> <span>or</span> <a href={linkLive}>view live version</a>
+    <div class="tags">
+        <slot />
+    </div>
+</div>
