@@ -1,0 +1,42 @@
+---
+import Header from "../components/Header.astro";
+import "../style.css";
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Maria Jonasson</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Londrina+Sketch&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/af156cf7b6.js" crossorigin="anonymous"></script>
+        <meta property="og:title" content="Maria Jonasson portfolio">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://maria-jon.github.io/portfolio/">
+        <meta property="og:image" content="">
+
+        <script type="application/ld+json">
+            {
+            "@context": "https://schema.org/",
+            "@type": "Person",
+            "familyName": "Jonasson",
+            "givenName": "Maria",
+            "jobTitle": "Front End Developer",
+            "sameAs": ["https://github.com/maria-jon", "https://www.linkedin.com/in/maria-jonasson-a4ba24115/"]
+            }
+        </script>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+	</head>
+	<body>
+        <Header></Header>
+		<slot />
+	</body>
+</html>
