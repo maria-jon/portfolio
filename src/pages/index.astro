@@ -7,11 +7,6 @@ import MiniCard from "../components/MiniCard.astro";
 
 import { getCollection } from "astro:content";
 
-/*
-const tools = (await getCollection("tools")).sort(
-    (a, b) =>  a.data.id - b.data.id,
-);
-*/
 const miniCards = (await getCollection("miniCards")).sort(
     (a, b) =>  a.data.id - b.data.id,
 );
@@ -25,9 +20,7 @@ const projects = (await getCollection("projects")).sort(
     <main>
         <div class="intro">
             <Hello></Hello>
-            <Toolkit>
-             
-            </Toolkit>
+            <Toolkit />
         </div>
         <section>
             <h2>featured projects</h2>
