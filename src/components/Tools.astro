@@ -1,0 +1,16 @@
+---
+import { render, type CollectionEntry } from "astro:content";
+interface Props {
+  tools: CollectionEntry<"tools">;
+}
+
+const { tools } = Astro.props;
+const { Content } = await render(tools);
+---
+
+<div>
+    <h3>{tools.data.title}</h3>
+    <Content />
+</div>
+
+

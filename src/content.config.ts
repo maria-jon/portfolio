@@ -28,7 +28,16 @@ const miniCards = defineCollection({
     }),
 });
 
+const tools = defineCollection({
+    loader: glob({ pattern: "**/*.md", base: "./src/content/tools" }),
+    schema: z.object({
+        title: z.string(),
+        id: z.number(),
+    })
+});
+
 export const collections = {
     projects,
     miniCards,
+    tools,
 };
