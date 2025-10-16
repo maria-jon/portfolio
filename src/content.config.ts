@@ -29,7 +29,7 @@ const miniCards = defineCollection({
 });
 
 const tools = defineCollection({
-    loader: glob({ pattern: "**/*.md", base: "./src/content/tools" }),
+    loader: glob({ pattern: "**/*.md", base: "./src/content/intro/tools" }),
     schema: z.object({
         title: z.string(),
         id: z.number(),
