@@ -10,4 +10,4 @@ Currently studying front-end development at Medieinstitutet. 👩‍💻 I'm esp
 
 - Accessibility (a11y) ♿
 - Responsiveness & usability
--  Thoughtful design & UI/UX 🎨
+- Thoughtful design & UI/UX 🎨
