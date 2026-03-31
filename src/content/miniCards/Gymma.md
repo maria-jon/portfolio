@@ -1,8 +1,8 @@
 ---
-id: 2
+id: 3
 title: "Gymma?"
-linkLive: "/"
-linkGithub: "https://github.com/maria-jon/portfolio"
+linkLive: "https://maria-jon.github.io/gymma/"
+linkGithub: "https://github.com/maria-jon/gymma"
 tags: [ "HTML5", "CSS", "JavaScript" ]
 ---
 
