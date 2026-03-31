@@ -4,7 +4,7 @@ title: "Beefcake"
 linkLive: "https://maria-jon.github.io/beefcake/"
 linkGithub: "https://github.com/maria-jon/beefcake"
 tags: [ "Vue", "TypeScript", "Sass", "Vite" ]
-imgSrc: "/beefcake.png"
+imgSrc: "/src/assets/beefcake.png"
 imgWidth: "1666"
 imgHeight: "1398"
 imgAlt: "Screenshot of Beefcake project" 
