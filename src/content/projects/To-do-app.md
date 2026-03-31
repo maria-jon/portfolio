@@ -4,7 +4,7 @@ title: "To-do app"
 linkLive: "https://maria-jon.github.io/todo/"
 linkGithub: "https://github.com/maria-jon/todo"
 tags: [ "Vue", "Pinia", "TypeScript", "Vite" ]
-imgSrc: "/todo.png"
+imgSrc: "/src/assets/todo.png"
 imgWidth: "1440"
 imgHeight: "1132"
 imgAlt: "Screenshot of to-do project"
