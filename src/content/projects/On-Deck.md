@@ -1,8 +1,8 @@
 ---
 id: 1
 title: "On Deck"
-linkLive: "https://maria-jon.github.io/poseidons-retreat/"
-linkGithub: "https://github.com/maria-jon/poseidons-retreat"
+linkLive: "https://on-deck-nine.vercel.app/"
+linkGithub: "https://github.com/maria-jon/on-deck"
 tags: [ "Astro", "TypeScript", "Sass", "API" ]
 imgSrc: "/on-deck.png"
 imgWidth: "1340"
