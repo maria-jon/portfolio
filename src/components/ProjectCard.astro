@@ -1,0 +1,55 @@
+---
+/*
+const { 
+    name, 
+    description, 
+    linkLive,
+    linkGithub,
+    imgSrc, 
+    imgWidth, 
+    imgHeight, 
+    imgAlt 
+} = Astro.props;*/
+
+import { render, type CollectionEntry } from "astro:content";
+interface Props {
+  projects: CollectionEntry<"projects">;
+}
+
+const { projects } = Astro.props;
+const { Content } = await render(projects);
+const p = projects.data;
+const tags = projects.data.tags;
+---
+
+<div class="card">
+    <a aria-label="link to project" class="project-link" href={p.linkLive}>
+        <img src={p.imgSrc}
+            width={p.imgWidth}
+            height={p.imgHeight}
+            loading="lazy"
+            alt={p.imgAlt}
+        />
+    </a>
+    <div class="project-description">
+        <h3>{p.title}</h3>
+        <p><Content /></p>
+        <a href={p.linkGithub}>View it on GitHub</a> <span>or</span> <a href={p.linkLive}>view live version</a>
+    </div>
+    <div class="tags">
+        {
+            tags.map((t) => <span>{t}</span>)
+        }
+    </div>
+</div>
+
+<style>
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .project-link {
+        width: 80%;
+    }
+</style>

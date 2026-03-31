@@ -1,0 +1,29 @@
+---
+import { getCollection } from "astro:content";
+import Tools from "./Tools.astro";
+
+const tools = (await getCollection("tools")).sort(
+    (a, b) =>  a.data.id - b.data.id,
+);
+---
+
+<section class="toolkit">
+    <h2>toolkit</h2>
+    <div class="core">
+        <h3>Core</h3>
+        <p>
+            Semantic HTML, CSS, Flexbox, Grid, JavaScript, TypeScript, Web accessibility, Version control (GitHub)
+        </p>
+    </div>
+    <div class="toolkit flex">
+        {
+            tools.map((tool) => <Tools tools={tool} />)
+        }
+    </div>
+</section>
+
+<style>
+    .core {
+        margin-bottom: 2rem;
+    }
+</style>
