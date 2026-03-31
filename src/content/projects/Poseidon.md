@@ -5,8 +5,8 @@ linkLive: "https://maria-jon.github.io/poseidons-retreat/"
 linkGithub: "https://github.com/maria-jon/poseidons-retreat"
 tags: [ "Vue", "TypeScript", "Sass", "Vite" ]
 imgSrc: "/src/assets/poseidon.png"
-imgWidth: "1548"
-imgHeight: "1400"
+imgWidth: 1548
+imgHeight: 1400
 imgAlt: "Screenshot of Poseidon project"
 ---
 

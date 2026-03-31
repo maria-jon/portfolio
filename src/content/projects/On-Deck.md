@@ -5,8 +5,8 @@ linkLive: "https://on-deck-nine.vercel.app/"
 linkGithub: "https://github.com/maria-jon/on-deck"
 tags: [ "Astro", "TypeScript", "Sass", "API" ]
 imgSrc: "/src/assets/on-deck.png"
-imgWidth: "1340"
-imgHeight: "1837"
+imgWidth: 1340
+imgHeight: 1837
 imgAlt: "Screenshot of On Deck project"
 ---
 

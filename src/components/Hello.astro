@@ -1,13 +1,18 @@
+---
+import { Image } from "astro:assets";
+---
 <section>
     <h2>hello</h2>
     <div class="hello">
         <div class="profile">
-            <img src="/src/assets/maria-jonasson.jpeg"
-            width="800"
-            height="800"
-            loading="lazy"
-            alt="blonde woman standing outside"
-            class="profile-photo">
+            <Image 
+                src="/src/assets/maria-jonasson.jpeg"
+                width={800}
+                height={800}
+                loading="lazy"
+                alt="blonde woman standing outside"
+                class="profile-photo"
+            />
         </div>
         <div>
             <span>
