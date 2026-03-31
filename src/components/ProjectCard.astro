@@ -11,6 +11,7 @@ const {
     imgAlt 
 } = Astro.props;*/
 
+import { Image } from "astro:assets";
 import { render, type CollectionEntry } from "astro:content";
 interface Props {
   projects: CollectionEntry<"projects">;
@@ -24,7 +25,8 @@ const tags = projects.data.tags;
 
 <div class="card">
     <a aria-label="link to project" class="project-link" href={p.linkLive}>
-        <img src={p.imgSrc}
+        <Image 
+            src={p.imgSrc}
             width={p.imgWidth}
             height={p.imgHeight}
             loading="lazy"
