@@ -178,6 +178,10 @@ section {
   gap: 2rem;
 }
 
+.mini-card {
+  width: 100%;
+}
+
 .mini-card h3 {
   font-size: 1.2rem;
   line-height: 1.2rem;
