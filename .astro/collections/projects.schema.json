@@ -26,10 +26,10 @@
           "type": "string"
         },
         "imgWidth": {
-          "type": "number"
+          "type": "string"
         },
         "imgHeight": {
-          "type": "number"
+          "type": "string"
         },
         "imgAlt": {
           "type": "string"

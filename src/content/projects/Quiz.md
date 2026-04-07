@@ -5,8 +5,8 @@ linkLive: "https://maria-jon.github.io/quiz/"
 linkGithub: "https://github.com/maria-jon/quiz"
 tags: [ "TypeScript", "Sass", "Vite", "A11y" ]
 imgSrc: "/src/assets/quiz.png"
-imgWidth: 2116
-imgHeight: 1616
+imgWidth: "2116"
+imgHeight: "1616"
 imgAlt: "Screenshot of Quiz project"
 ---
 

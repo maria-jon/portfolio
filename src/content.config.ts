@@ -11,8 +11,8 @@ const projects = defineCollection({
         linkGithub: z.string(),
         tags: z.array(z.string()),
         imgSrc: z.string(),
-        imgWidth: z.number(),
-        imgHeight: z.number(),
+        imgWidth: z.string(),
+        imgHeight: z.string(),
         imgAlt: z.string(),
         }),
 });
